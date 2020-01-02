@@ -12,8 +12,9 @@ app.use(bodyParser.urlencoded({ extended: false })) // la expresión "use" indic
 // parse application/json
 app.use(bodyParser.json())
 
-// cargar el archivo routes/usuario.js
-app.use(require('./routes/usuario'));
+// cargar el archivo routes/usuario.js ==> Ahora carga todas las rutas dentro de index.js
+app.use(require('./routes/index'));
+
 
 
 
